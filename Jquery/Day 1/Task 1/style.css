@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightblue;
+    margin-top: 40px;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+input {
+    height: 20px;
+    margin-right: 7px;
+    padding: 5px;
+}
+
+button {
+    margin: 0;
+    color: white;
+    background-color: rgb(89, 139, 178);
+    width: 80px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    opacity: 0.7;
+}
+
+ul {
+    list-style-type: none;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Responsive 2</title>
+<style>
+  section {
+    height: 690px;
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 5px;
+    text-align: center;
+    /* color: rgba(176, 141, 124, 0.905); */
+    color: brown;
+  }
+  header {
+    background-color: rgb(249, 239, 231);
+    grid-column: 1 / 5;
+    padding-top: 20px;
+  }
+   nav {
+    background-color: rgb(198, 222, 241);
+    grid-column: 1;
+    grid-row: 2 / 4;
+    padding-top: 20px;
+  }
+ aside {
+    background-color: rgb(198, 222, 241);
+    grid-column: 4;
+    grid-row: 2 / 4;
+    padding-top: 20px;
+  }
+ article {
+    background-color: rgb(242, 198, 222);
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    padding-top: 20px;
+  }
+    footer {
+    background-color: rgb(249, 239, 231);
+    grid-column: 1 / 5;
+    padding-top: 20px;
+  }
+  /* @media (max-width: 600px) {
+    section {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (min-width: 601px) and (max-width: 900px) {
+    body {
+      background-color: rgb(219, 205, 240);
+    }
+
+  } */
+  
+</style>
+</head>
+<body>
+<section>
+  <header>HEADER</header>
+  <nav>SIDENAV</nav>
+  <article>MAIN CONTENT</article>
+  <aside>SIDEBAR</aside>
+  <footer>FOOTER</footer>
+</section>
+</body>
+</html>

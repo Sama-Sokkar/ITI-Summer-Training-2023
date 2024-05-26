@@ -1,0 +1,15 @@
+.tab {
+    display: none;
+    font-size: large;
+}
+.tabs
+{
+    background-color: beige;
+    display: flex;
+    list-style-type: none;
+}
+li
+{
+    padding: 50px;
+    padding-left: 240px;
+}

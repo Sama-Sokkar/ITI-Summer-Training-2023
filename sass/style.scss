@@ -1,0 +1,50 @@
+
+$primary-color: #da6c8b;
+$secondary-color: #4682A9;
+
+// Colors
+body{
+    background-color: #F7F5EB;
+}
+
+.main
+{
+    &-title
+    {
+        color: $primary-color;
+    }
+    &-subtitle
+    {
+        color: $secondary-color;
+    }
+    &-btn
+    {
+        background-color: $primary-color;
+        &:hover
+        {
+            background-color: $secondary-color;
+        }
+    }
+}
+
+
+// Font size
+$fonts:18px,16px,14px;
+@each $s in $fonts
+{
+    .font-#{$s}
+    {
+        font-size: $s;
+    }
+}
+
+
+// Media query
+.finish-btn
+{
+    width: 50%;
+    @media (max-width:700px)
+    {
+        width: 100%;
+    }
+}

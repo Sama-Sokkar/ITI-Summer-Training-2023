@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Last Day !!!!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <div class="t1">Tab 1</div>
+            <p class="one">-Fisrt</p>
+            <div class="t2">Tab 2</div>
+            <p class="two">-Second</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(".sidebar").hover(
+            function(){
+                $(this).css("left", "0");
+            },
+            function(){
+                $(this).css("left", "-70px");
+            }
+        );
+
+        $(".t1").click(function () {
+            $(".one").slideToggle("slow");
+        })
+
+        $(".t2").click(function () {
+            $(".two").slideToggle("slow");
+        })
+
+    </script>
+</body>
+</html>

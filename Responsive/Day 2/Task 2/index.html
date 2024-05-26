@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Responsive 1</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href=""> -->
+        <style>
+            nav
+            {
+                display: grid;
+                grid-template-areas:
+                "ho ab se co";
+                background-color: lightgray;
+                padding: 10px 0px 10px 220px;
+            }
+            .one
+            {
+                grid-area: ho;
+            }
+            .two
+            {
+                grid-area: ab;
+            }
+            .three
+            {
+                grid-area: se;
+            }
+            .four
+            {
+                grid-area: co;
+            }
+            .parent {
+                display: grid;
+                grid-template-areas: "ch1 ch2";
+                grid-template-columns: 1fr 1fr; 
+                gap: 7px;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .child1
+            {
+                grid-area: ch1;
+                border: 3px solid;
+                
+            }
+            .child2
+            {
+                grid-area: ch2;
+                border: 3px solid;
+            }
+            @media (max-width: 600px)
+            {
+                nav {
+                    grid-template-areas: 
+                    "ho ho ho ho"
+                    "ab ab ab ab"
+                    "se se se se"
+                    "co co co co";
+                }
+                .parent
+                {
+                    grid-template-areas: 
+                    "ch1 ch1 ch1 ch1"
+                    "ch2 ch2 ch2 ch2"; 
+                }
+            }
+            /* */
+        </style>
+
+    </head>
+    <body>
+        <nav>
+            <div class="one">Home</div>
+            <div class="two">About</div>
+            <div class="three">Services</div>
+            <div class="four">Contact</div>
+        </nav>
+        <div class="parent">
+            <div class="child1">
+                <p>This is a flex item</p>
+                <footer>
+                    <p>This is footer</p>
+                </footer>
+            </div>
+            <div class="child2">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde molestias rem asperiores deserunt quia, laudantium, sapiente natus voluptatum, velit odit sit! Iste consequuntur facere error saepe sunt recusandae tenetur a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed laudantium nihil fugiat est laboriosam dolor odit! Necessitatibus consequatur cumque beatae dolores illum, voluptatem illo exercitationem suscipit animi omnis itaque explicabo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita sed eaque doloribus porro voluptate aut placeat, doloremque quas dolor magni, nulla eos, id harum quasi repudiandae. Esse accusamus ut non.</p>
+                <footer>
+                    <p>This is footer</p>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
+  

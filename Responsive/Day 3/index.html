@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bootstrap</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    </head>
+    <body style="background-color: rgb(240,240,240);">
+        <header class="container">
+            <h1 class="mt-4 mb-4">The Flower Blog</h1>
+        </header>
+
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid p-2 bg-dark" style="color: white;">
+                <div class="collapse navbar-collapse d-flex justify-content-evenly" id="navbarNavAltMarkup">
+                    <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Archive</a>
+                    <a class="nav-link "  href="#">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container col-8">
+            <div class="card mt-4" style="border-radius: 25px; width: 990px;">
+                <img src="Images/intro_flower.png" class="card-img" style="border-radius: 25px; height: 280px;">
+                <div class="card-img-overlay p-5" style="color: white;">
+                    <h2 class="card-title">Do you love flowers <br>as much as we do?</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam, quis nostrud <br> exercitation ullamco laboris nisi ut.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container col-8">
+            <div class="row mt-5">
+                <div class="col-8">
+                    <h3 class="mb-3">This is the title of a blog post</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod tellus eu orci imperdiet nec rutrum lacus blandit. Cras enim nibh, sodales ultricies elementum vel, fermentum id tellus. Proin metus odio, ultricies eu pharetra dictum, laoreet id odio. Curabitur in odio augue. Morbi congue auctor interdum. Phasellus sit amet metus justo. Phasellus vitae tellus orci, at elementum ipsum. In in quam eget diam adipiscing condimentum. Maecenas gravida diam vitae nisi convallis vulputate quis sit amet nibh. Nullam ut velit tortor. Curabitur ut elit id nisl volutpat consectetur ac ac lorem. Quisque non elit et elit lacinia lobortis nec a velit. Sed ac nisl sed enim consequat porttitor.
+                    </p>
+
+                    <img src="Images/flower.png" class="img-fluid mt-3 mb-4 shadow" alt="...">
+
+                    <p class="mt-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod tellus eu orci imperdiet nec rutrum lacus blandit. Cras enim nibh, sodales ultricies elementum vel, fermentum id tellus. Proin metus odio, ultricies eu pharetra dictum, laoreet id odio. Curabitur in odio augue. Morbi congue auctor interdum. Phasellus sit amet metus justo. Phasellus vitae tellus orci, at elementum ipsum. In in quam eget diam adipiscing condimentum. Maecenas gravida diam vitae nisi convallis vulputate quis sit amet nibh. Nullam ut velit tortor. Curabitur ut elit id nisl volutpat consectetur ac ac lorem. Quisque non elit et elit lacinia lobortis nec a velit. Sed ac nisl sed enim consequat porttitor.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod tellus eu orci imperdiet nec rutrum lacus blandit. Cras enim nibh, sodales ultricies elementum vel, fermentum id tellus. Proin metus odio, ultricies eu pharetra dictum, laoreet id odio. Curabitur in odio augue. Morbi congue auctor interdum. Phasellus sit amet metus justo. Phasellus vitae tellus orci, at elementum ipsum. In in quam eget diam adipiscing condimentum. Maecenas gravida diam vitae nisi convallis vulputate quis sit amet nibh. Nullam ut velit tortor. Curabitur ut elit id nisl volutpat consectetur ac ac lorem. Quisque non elit et elit lacinia lobortis nec a velit. Sed ac nisl sed enim consequat porttitor.
+                    </p>
+                    <div class="accordion mt-4 mb-5" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                George Washington<br><br>
+                                on June 29th 2009 at 23:35
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body p-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Benjamin Franklin<br><br>
+                                on June 29th 2009 at 23:40
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body p-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Barack Obama<br><br>
+                                on June 29th 2009 at 23:59
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body p-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <h3 class="mt-5">Post a comment</h3>
+                    <form action="#" method="get" class="p-3">
+                        <label for="name"><h4>First Name</h4></label>
+                        <input id="name" type="text" placeholder="First name" name="name" required class="form-control"><br><br>
+                        <label for="name"><h4>Last Name</h4></label>
+                        <input id="name" type="text" placeholder="Last name" name="name" required class="form-control"><br><br>
+                        <label for="email"><h4>E-mail</h4></label>
+                        <input id="email" type="email" placeholder="Example: Egypt21@gmail.com" name="email" required class="form-control"><br><br>
+                        <h4>Comment</h4>
+                        <textarea class="form-control" placeholder="Write your opinion...."></textarea>
+                        <button type="button" class="btn btn-dark p-2 mt-3">Post comment</button>
+                    </form>
+
+                </div>
+                <div class="col-4" >
+                    <div class="first rounded p-3" style="background-color: rgb(217,217,217);">
+                        <h4 class="p-2">Categories</h4>
+                        <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover p-4">Lorem ipsum dolor</a><br>
+                        <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover p-4">Sit amet consectetur</a><br>
+                        <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover p-4">Adipisicing elit sed</a><br>
+                        <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover p-4">Incididunt ut labore</a><br>
+                    </div>
+                    <div class="first rounded p-3 mt-3" style="background-color: rgb(217,217,217);">
+                        <h4 class="p-2">Archives</h4>
+                        <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover p-4">December 2008</a><br>
+                        <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover p-4">January 2009</a><br>
+                        <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover p-4">February 2009</a><br>
+                        <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover p-4">March 2009</a><br>
+                        <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover p-4">April 2009</a><br>
+                        <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover p-4">May 2009</a><br>
+                        <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover p-4">June 2009</a><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center text-lg-start bg-dark text-muted pt-2" >
+            <section class="" style="color: white;">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    <i class="fas fa-gem me-3"></i>Company name
+                    </h6>
+                    <p>
+                    Here you can use rows and columns to organize your footer content. Lorem ipsum
+                    dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Products
+                    </h6>
+                    <p>
+                    <a href="#!" class="text-reset">Angular</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">React</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">Vue</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">Laravel</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Useful links
+                    </h6>
+                    <p>
+                    <a href="#!" class="text-reset">Pricing</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">Settings</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">Orders</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">Help</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                    <p>
+                    <i class="fas fa-envelope me-3"></i>
+                    info@example.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                    <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                </div>
+                </div>
+            </div>
+            </section>
+        </footer>
+
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

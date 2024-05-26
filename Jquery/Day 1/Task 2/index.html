@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jquery 1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <ul class="tabs">
+            <li class="current">Tab 1</li>
+            <li>Tab 2</li>
+            <li>Tab 3</li>
+            <li>Tab 4</li>
+        </ul>
+        <div class="tab">First</div>
+        <div class="tab">Second</div>
+        <div class="tab">Third</div>
+        <div class="tab">Fourth</div>
+    </div>
+
+    <script>
+            $(".tabs li").click(function() {
+                $(".tabs li").removeClass("current");
+                $(this).addClass("current");
+                $(".tab").hide();
+                var index = $(this).index();
+                $(".tab:eq(" + index + ")").show();
+            });
+    </script>
+</body>
+</html>

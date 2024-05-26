@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive 2</title>
+    <style>
+        section 
+        {
+            height: 690px;
+            /* background-color: aquamarine; */
+            display: grid;
+            grid-template-areas:
+            "head head head head"
+            "nav art art as"
+            "nav art art as"
+            "foot foot foot foot";
+            gap: 5px;
+            text-align: center;
+            /* color: rgba(176, 141, 124, 0.905); */
+            color: brown;
+        }
+        header {
+            background-color: rgb(249, 239, 231);
+            grid-area: head;
+            padding-top: 20px;
+        }
+        aside {
+            background-color: rgb(198,222,241);
+            grid-area: as;
+            padding-top: 20px;
+        }
+        nav {
+            background-color: rgb(198,222,241);
+            grid-area: nav;
+            padding-top: 20px;
+        }
+        article {
+            background-color: rgb(242,198,222);
+            grid-area: art;
+            padding-top: 20px;
+        }
+        footer {
+            background-color: rgb(249, 239, 231);
+            grid-area: foot;
+            padding-top: 20px;
+        }
+        @media (max-width: 600px) {
+            section {
+            grid-template-areas:
+                "head head head head"
+                "nav nav nav nav"
+                "art art art art"
+                "as as as as"
+                "foot foot foot foot";
+                background-color: rgb(219,205,240);
+            }
+        }
+        @media (min-width: 601px) and (max-width: 900px) 
+        {
+            body 
+            {
+                background-color: rgb(219,205,240);
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <section>
+      <header>HEADER</header>
+      <nav>SIDENAV</nav>
+      <article>MAIN CONTENT</article>
+      <aside>SIDEBAR</aside>
+      <footer>FOOTER</footer>
+    </section>
+  </body>
+</html>

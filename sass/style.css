@@ -1,0 +1,37 @@
+body {
+  background-color: #F7F5EB;
+}
+
+.main-title {
+  color: #da6c8b;
+}
+.main-subtitle {
+  color: #4682A9;
+}
+.main-btn {
+  background-color: #da6c8b;
+}
+.main-btn:hover {
+  background-color: #4682A9;
+}
+
+.font-18px {
+  font-size: 18px;
+}
+
+.font-16px {
+  font-size: 16px;
+}
+
+.font-14px {
+  font-size: 14px;
+}
+
+.finish-btn {
+  width: 50%;
+}
+@media (max-width: 700px) {
+  .finish-btn {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

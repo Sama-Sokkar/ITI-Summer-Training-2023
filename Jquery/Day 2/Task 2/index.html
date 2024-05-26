@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Day !!!!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="jquery-3.6.1.js"></script>
+    
+</head>
+<body>
+    <button type="button" class="btn btn-outline-primary">Click here to get users</button>
+    <div class="card-container ">
+
+    </div>
+
+    <script>
+        $("button").click(function(){
+            $.ajax({
+                url: "https://jsonplaceholder.typicode.com/posts",
+                method: "get",
+                success: function(postsArr){
+                    for(var i = 0; i < postsArr.length; i++){
+                        var post = postsArr[i];
+                        var cardHtml = `
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title userId">${post.userId}</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary id">${post.id}</h6>
+                                    <p class="card-text title">${post.title}</p>
+                                    <p class="card-text body">${post.body}</p>
+                                </div>
+                            </div>
+                        `;
+                        $(".card-container").append(cardHtml);
+                    }
+                }
+            });
+        });
+    </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

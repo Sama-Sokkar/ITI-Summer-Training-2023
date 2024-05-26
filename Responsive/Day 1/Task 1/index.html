@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Responsive 1</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href=""> -->
+        <style>
+            nav 
+            {
+                display: flex;
+                justify-content: space-around;
+                background-color: lightgray;
+                padding: 10px 0px;
+                margin-bottom: 10px;
+            }
+            .parent 
+            {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                gap: 10px;
+            }
+            .child1,.child2 
+            {
+                flex:1; 
+                display: flex;
+                border: 3px solid;
+                height: 200px;
+                flex-direction: column;
+            }
+            footer 
+            {
+                margin-top: auto; 
+                background-color: lightgray;
+            }
+        </style>
+
+    </head>
+    <body>
+        <nav>
+            <div>Home</div>
+            <div>About</div>
+            <div>Services</div>
+            <div>Contact</div>
+        </nav>
+        <div class="parent">
+            <div class="child1">
+                <p>This is a flex item</p>
+                <footer>
+                    <p>This is footer</p>
+                </footer>
+            </div>
+            <div class="child2">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde molestias rem asperiores deserunt quia, laudantium, sapiente natus voluptatum, velit odit sit! Iste consequuntur facere error saepe sunt recusandae tenetur a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed laudantium nihil fugiat est laboriosam dolor odit! Necessitatibus consequatur cumque beatae dolores illum, voluptatem illo exercitationem suscipit animi omnis itaque explicabo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita sed eaque doloribus porro voluptate aut placeat, doloremque quas dolor magni, nulla eos, id harum quasi repudiandae. Esse accusamus ut non.</p>
+                <footer>
+                    <p>This is footer</p>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
