@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Html 5</title>
+    </head>
+    <body>
+        <p>Red</p>
+        <input oninput="changeColR()" type="range" id="red">
+        <p>Green</p>
+        <input oninput="changeColG()" type="range" id="green">
+        <p>Blue</p>
+        <input oninput="changeColB()" type="range" id="blue">
+        <h1>Change the 3 color Ranges above and observe my color change</h1>
+    </body>
+    <script>
+        var rangeR = document.getElementById("red").value;
+        var rangeG = document.getElementById("green").value;
+        var rangeB = document.getElementById("blue").value;
+        function changeColR()
+        {
+            document.h1.style.color = 'rgb('+rangeR+',0,0)';
+        }
+    </script>
+</html> -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Html 5</title>
+    </head>
+    <body>
+        <p>Red</p> 
+        <input oninput="changeCol()" value="0" min="0" max="255" type="range" id="red">
+        <p>Green</p>
+        <input oninput="changeCol()" value="0" min="0" max="255" type="range" id="green">
+        <p>Blue</p>
+        <input oninput="changeCol()" value="0" min="0" max="255" type="range" id="blue">
+        <h1 id="colorChange">Change the 3 color Ranges above and observe my color change</h1>
+    </body>
+    <script>
+        var rangeR = document.getElementById("red");
+        var rangeG = document.getElementById("green");
+        var rangeB = document.getElementById("blue");
+        var colorChange = document.getElementById("colorChange");
+
+        function changeCol() {
+            var r = rangeR.value;
+            var g = rangeG.value;
+            var b = rangeB.value;
+            colorChange.style.color = `rgb(${r},${g},${b})`;
+        }
+    </script>
+</html>

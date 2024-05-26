@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Html 5</title>
+    </head>
+    <body>
+        <h1>Change E-mail Address</h1>
+        <form id="form">
+            <input type="text" placeholder="Username" required id="name"><br><br>
+            <input type="email" placeholder="Email" pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}" required id="email"><br><br>
+            <input type="checkbox" id="remember">Remember me<br><br>
+            <button type="submit">Change</button>
+        </form>
+        <script>
+            var form = document.getElementById("form");
+            var remember = document.getElementById("remember");
+ 
+            form.addEventListener("submit", function(e) 
+            {
+                var username = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                //console.log (remember.checked);
+ 
+                if (remember.checked) 
+                {
+                    localStorage.setItem("username", username);
+                    localStorage.setItem("email", email);
+                } 
+                else 
+                {
+                    localStorage.clear();
+                }
+            });
+        </script>
+    </body>
+</html>
+ 
