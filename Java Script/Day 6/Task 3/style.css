@@ -1,0 +1,32 @@
+table 
+{
+    width: 100%;
+    margin-top: 20px;
+}
+th, td 
+{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+th 
+{
+    background-color: #f2f2f2;
+}
+#btn, #resetBtn 
+{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#resetBtn 
+{
+    background-color: #f44336;
+}
+tbody
+{
+    text-align: center;
+}

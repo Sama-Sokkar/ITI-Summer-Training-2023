@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <title>Registration page</title>
+
+    </head>
+    <body>
+        <form action="Thank you.html" method="get">
+
+            <label for="name">First Name</label>
+            <input id="name" type="text" placeholder="First name" name="name" value="Sama" required><br><br>
+            <label for="name">Last Name</label>
+            <input id="name" type="text" placeholder="Last name" name="name" required><br><br>
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" required><br><br>
+            <label for="password">Repeat Password</label>
+            <input id="password" type="password" name="password" required><br><br>
+            <label for="file">User Picture</label>
+            <input type="file" name="File"><br><br>
+            <fieldset>
+                <legend>Gender:</legend>
+                <input id="male" type="radio" name="Gender" value="male">
+                <label for="male">Male</label><br>
+                <input id="female" type="radio" name="Gender" value="female">
+                <label for="female">Female</label>
+            </fieldset><br>
+
+            <label for="UNI"> Choose University</label>
+            <select name="UNI">
+                <option value="choose">Choose UNI</option>
+                <option value="Suez Canal">Suez Canal University</option>
+                <option value="Portsaid">Portsaid University</option>
+                <option value="MIU">MIU University</option>
+                <option value="MSA">MSA University</option>
+            </select><br><br>
+
+            <label for="Fuculty"> Choose Fuculty</label>
+            <input list="Fuculty" type="text" name="DatalistUNI" id="listInput">
+            <datalist id="Fuculty">
+                <option value="FCI">Fuculty of Computers and Informatics</option>
+                <option value="FOM">Fuculty of Medicine</option>
+                <option value="FOC">Fuculty of Commerce</option>
+                <option value="FOE">Fuculty of Engineering</option>
+            </datalist><br><br>
+
+            <fieldset>
+                <legend>Interests:</legend>
+                    <input type="checkbox" id="Programming" name="interests" value="Programming" />
+                    <label for="Programming">Programming</label>
+                    <input type="checkbox" id="reading" name="interests" value="reading" />
+                    <label for="reading">reading</label>
+                    <input type="checkbox" id="swimming" name="interests" value="swimming" />
+                    <label for="swimming">swimming</label>
+            </fieldset><br><br>
+
+            <label for="Text area">About me</label>
+            <textarea name="Text area" id="Text area" cols="80" rows="5" placeholder="Write about yourself...."></textarea><br><br>
+
+            <input type="reset">
+            <button type="submit">submit</button>
+
+        </form>
+    </body>
+</html>

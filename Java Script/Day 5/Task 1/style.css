@@ -1,0 +1,29 @@
+body
+{
+    background-color: rgb(214, 237, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+input
+{
+    padding: 12px;
+    width: 300px;
+    height: 20px;
+    margin-top: 6px;
+}
+label
+{
+    font-size:125%;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 350px;
+    border-radius: 2%;
+    border: 2px solid rgb(89, 139, 178);
+}
+
